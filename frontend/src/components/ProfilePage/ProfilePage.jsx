@@ -23,7 +23,7 @@ function ProfilePage() {
   useEffect(() => {
     const fetchProfiles = async () => {
       try {
-        const response = await fetch("http://localhost:5001/api/users"); // Backend endpoint
+        const response = await fetch("https://hcbackend-production-1192.up.railway.app/api/users"); // Backend endpoint
         if (!response.ok) {
           throw new Error("Failed to fetch profiles");
         }
